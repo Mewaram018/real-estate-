@@ -1,0 +1,487 @@
+/* src/styles/Agents.css */
+
+.agents-page {
+  background: #f8f9fa;
+}
+
+.agents-hero {
+  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+  color: white;
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.agents-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.agents-hero p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.agent-search {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.agent-search input {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.9);
+}
+
+.agents-stats {
+  padding: 4rem 0;
+  background: white;
+  margin: -100px 0 4rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  color: #8e44ad;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.stat-item p {
+  color: #666;
+  font-weight: 500;
+}
+
+.agents-grid-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.agents-grid-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+}
+
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.agent-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.agent-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.agent-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.agent-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.agent-card:hover .agent-image img {
+  transform: scale(1.1);
+}
+
+.agent-rating {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.agent-info {
+  padding: 1.5rem;
+}
+
+.agent-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.specialization {
+  color: #8e44ad;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.experience {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.agent-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.agent-stats span {
+  background: #f8f9fa;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.languages {
+  margin-bottom: 1.5rem;
+}
+
+.languages strong {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.language-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.language-tag {
+  background: #e8f5e8;
+  color: #27ae60;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.agent-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-btn {
+  flex: 1;
+  background: linear-gradient(45deg, #8e44ad, #9b59b6);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-properties {
+  flex: 1;
+  background: transparent;
+  color: #8e44ad;
+  border: 2px solid #8e44ad;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover,
+.view-properties:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(142,68,173,0.3);
+}
+
+.view-properties:hover {
+  background: #8e44ad;
+  color: white;
+}
+
+.become-agent {
+  padding: 4rem 0;
+  background: white;
+}
+
+.become-agent-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.become-agent-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.become-agent-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.benefits-list {
+  margin-bottom: 2rem;
+}
+
+.benefit {
+  padding: 0.5rem 0;
+  color: #27ae60;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.join-btn {
+  background: linear-gradient(45deg, #8e44ad, #9b59b6);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.join-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(142,68,173,0.4);
+}
+
+.become-agent-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.contact-modal {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.contact-details {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.contact-details p {
+  margin-bottom: 0.5rem;
+  color: #666;
+  padding: 0.5rem 0;
+}
+
+.quick-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quick-contact input,
+.quick-contact textarea {
+  padding: 1rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.quick-contact input:focus,
+.quick-contact textarea:focus {
+  outline: none;
+  border-color: #8e44ad;
+  box-shadow: 0 0 0 3px rgba(142,68,173,0.1);
+}
+
+.quick-contact button {
+  background: linear-gradient(45deg, #8e44ad, #9b59b6);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quick-contact button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(142,68,173,0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .agents-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .agent-search {
+    flex-direction: column;
+  }
+  
+  .agents-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .become-agent-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .agent-actions {
+    flex-direction: column;
+  }
+  
+  .modal-overlay {
+    padding: 1rem;
+  }
+  
+  .contact-modal {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .agents-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .agent-card {
+    margin-bottom: 1rem;
+  }
+  
+  .language-tags {
+    justify-content: center;
+  }
+}
+
+/* Animation for agent cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.agent-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.agent-card:nth-child(2) { animation-delay: 0.1s; }
+.agent-card:nth-child(3) { animation-delay: 0.2s; }
+.agent-card:nth-child(4) { animation-delay: 0.3s; }
+.agent-card:nth-child(5) { animation-delay: 0.4s; }
+.agent-card:nth-child(6) { animation-delay: 0.5s; }
